@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KeRo Store</title>
+    <link rel="icon" type="image/x-icon" href="/imgs/logo.PNG">
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/onlineSign.css" />
+    <!-- Google Fonts -->
+
+</head>
+
+<body>
+    <div class="online">
+
+        <div class="left flex">
+            <h1>Welcome to My World</h1>
+            <img src="imgs/logo.PNG" alt="">
+            <h1>Be Positive</h1>
+            <h5>© 2025 KeRo</h5>
+        </div>
+        <div class="right">
+            <div class="login">
+
+                <div class="landding ">
+                    <div class="signUp">You already have an account? <a href="log.html"> Login!</a></div>
+                    <form action="main.html" class="flex" id="form">
+                        <h1>Sign In</h1>
+
+                        <input type="text" placeholder="Enter UserName" value="" required>
+
+                        <input type="email" placeholder="Email" value="" required>
+                        <span class="notValid" id="checkPass">Confirm Password not valid </span>
+                        <div class="pass">
+                            <span class="show"></span>
+                            <i class="fa-solid fa-eye"></i>
+
+                            <input type="password" placeholder="Enter Password" id="pass" value="" required>
+
+                            <input type="password" placeholder="Confirm Password" id="passA" value="" required>
+                        </div>
+                        <select name="" id="select">
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                        </select>
+                        <a href="" class="forget">Forget Password?</a>
+
+                        <div class="sub">
+                            <span class="notValid" id="CheckBox">Not Valid please enter the same text in the box</span>
+
+                            <div class="check">
+                                <div class="random">
+                                    <h5></h5>
+                                </div>
+                                <input id="letterNum" type="text" required>
+                            </div>
+                            <input type="submit" value="Register">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="js/sign.js"></script>
+
+</body>
+
+</html>

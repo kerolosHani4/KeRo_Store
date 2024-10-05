@@ -1,0 +1,122 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+/* End Global Rules */
+/* Start Components */
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* End Components */
+
+.online {
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #224162, #007bff,  #007bff, #1265a9);
+    display: flex;
+    text-align: center;
+    color: white;
+}
+
+
+
+.online h5 {
+    color: black;
+}
+
+.online h1 {
+    margin: 50px 0px;
+   position: relative;
+   font-size: 30px;
+}
+.online img{
+    width: 220px;
+    margin-bottom: 10px;
+}
+
+.anmi{
+ content: "";
+ background-color: white;
+ width: 11px;
+ height: 22px;
+ margin-left: 8px;
+ display: inline-block;
+ animation: text 0.2s infinite ;
+ -webkit-animation: text 0.2s infinite ;
+ border-radius: 1px;
+ -webkit-border-radius: 1px;
+ -moz-border-radius: 1px;
+ -ms-border-radius: 1px;
+ -o-border-radius: 1px;
+ color: transparent;
+
+}
+@keyframes text{
+    to{
+        background-color: transparent;
+    }
+}
+.circle{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin: 2px;
+    background-color: white;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+   
+}
+.circle{
+    animation: colorForward 1.5s infinite  ;
+    -webkit-animation: colorForward 1.5s infinite  ;
+}
+.circles :first-child{
+}
+.circles :nth-child(2)
+{
+    animation-delay: 0.3s;
+}
+.circles :nth-child(3)
+{
+    animation-delay: 0.6s;
+ 
+}
+.circles :nth-child(4)
+{
+    animation-delay: 0.9s;
+  
+}
+.circles :last-child
+{
+    animation-delay: 1.2s;
+  
+}
+@keyframes  colorForward{
+   0%{ background-color: #6b6f75;
+}
+80%{
+    background-color: white;
+}
+}
